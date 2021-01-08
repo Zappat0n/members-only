@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   end
 
   def index
+    @posts = Post.all
   end
 
   def create
@@ -22,6 +23,5 @@ class PostsController < ApplicationController
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
-
   end
 end
