@@ -1,13 +1,20 @@
 <h1>All Posts</h1>
-
 <ul id="posts">
   <% @posts.each do |post| %>
-    <%= link_to post.title, post %> </br>
-    <%= post.story %> 
-    </br>
+    <%= link_to post.title, post %>
+    <% if user_signed_in? %>
+      <p> Author: <%= post.user.email %></p>
+      <% else %>
+      </br>
+    <% end %>
+    <%= post.story %>
+    </br></br>
   <% end %>
 </ul><br>
 
 <%= link_to 'New Post', new_post_path, :class => "new" %>
-<%= link_to 'Sign Out', destroy_user_session_path %>
-
+<% if user_signed_in? %>
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign in", new_user_session_path %>
+<% end %>
