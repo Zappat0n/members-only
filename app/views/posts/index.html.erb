@@ -2,10 +2,12 @@
 
 <ul id="posts">
   <% @posts.each do |post| %>
-    <%= link_to post.title, posts_path(post) %> </br>
+    <%= link_to post.title, post %> </br>
     <%= post.story %> 
     </br>
   <% end %>
 </ul><br>
 
 <%= link_to 'New Post', new_post_path, :class => "new" %>
+<%= link_to 'Sign Out', destroy_user_session_path %>
+

@@ -1,2 +1,6 @@
 <h1><%= @post.title %></h1>
+
 <p><%= @post.story %></p> <br/>
+<% if user_signed_in? %>
+<p><%= @post.user.email %></p> <br/>
+<%end%>

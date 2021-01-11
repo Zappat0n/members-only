@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :users, except: :create, path: '', path_names: { sign_in: 'login', sign_out: 'signed-out' }
   resources :posts
   root to: 'posts#index'
+  get 'users/signout', to: 'posts#index'
+
+  # get 'posts/:id', to: 'posts#show'
   # get 'posts/new', to: 'posts#new'
   # get 'posts/index'
   # get 'posts', to: 'posts#new'
