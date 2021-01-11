@@ -1,7 +1,7 @@
 <h1>All Posts</h1>
 <ul id="posts">
   <% @posts.each do |post| %>
-    <%= link_to post.title, post %>
+    <%= post.title %>
     <% if user_signed_in? %>
       <p> Author: <%= post.user.email %></p>
       <% else %>
