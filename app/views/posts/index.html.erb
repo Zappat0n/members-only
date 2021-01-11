@@ -3,6 +3,8 @@
 <ul id="posts">
   <% @posts.each do |post| %>
     <%= link_to post.title, posts_path(post) %> </br>
+    <%= post.story %> 
+    </br>
   <% end %>
 </ul><br>
 
