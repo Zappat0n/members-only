@@ -15,7 +15,7 @@ We used basic concepts of Ruby on Rails including:
 - Migrations
 - View
 - RESTful design
-- Authentification system
+- Authentication system
 - Adding gems for extra features
 
 ## To install and run
@@ -37,10 +37,10 @@ This is the blog for a clubhouse where any member can create his own posts but y
 
 The main page will display all the posts created.
 
-To create a new post you will need to be signed in. If you are not signed in you will be sen to page with sign in and sign up options.
-After you have siggned in you can create a new post.
+To create a new post you will need to be signed in. If you are not signed in you will be sent to a page with sign in and sign up options.
+After you have signed in you can create a new post.
 
-You can see any post just clicking on the post.
+You can see any post just by clicking on the post.
 
 You will have a sign out link if you are signed in and a sign in button if you are not signed in.
 
@@ -73,8 +73,8 @@ Contributions, issues, and feature requests are welcome! Start by:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/angel-barros/)
 
 👤 **Nick Kuria**
-- Github: []()
-- LinkedIn: []()
+- GitHub: [@Nkuria](https://github.com/Nkuria)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nkuria)
 
 ## Show your support
 
