@@ -1,0 +1,16 @@
+<%= form_for(@post) do |f| %>
+
+  <div class="title">
+    <%= f.label :title %><br />
+    <%= f.text_field :title%>
+  </div>
+
+  <div class="story">
+    <%= f.label :story %><br />
+    <%= f.text_field :story%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "New Post" %>
+  </div>
+<% end %>
